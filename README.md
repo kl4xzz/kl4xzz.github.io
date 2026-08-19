@@ -1,15 +1,18 @@
 # Khawja Kashfee — Portfolio Site
 
-A static site — no backend needed, just these three files:
+A static, multi-page site — no backend needed. Six files total:
 
-- `index.html` — structure/content
-- `style.css` — all styling, the blueprint/schematic theme, animations
-- `script.js` — scroll-reveal animation + hero robot parallax
+- `index.html` — homepage (hero + teasers linking to the other pages)
+- `about.html` — full bio, toolset, and timeline
+- `projects.html` — full project gallery, F625 featured at top
+- `contact.html` — contact details + resume/CV download slot
+- `style.css` — all shared styling, the blueprint/schematic theme, animations
+- `script.js` — scroll-reveal animation + hero robot parallax (shared across all pages)
 
 ## Upload to GitHub
 
 1. Create a new repo on GitHub, e.g. `kashfee-portfolio`
-2. Upload all three files (`index.html`, `style.css`, `script.js`) to the repo root — drag and drop works fine via GitHub's web UI ("Add file" → "Upload files")
+2. Upload all six files to the repo root — drag and drop works fine via GitHub's web UI ("Add file" → "Upload files")
 3. Commit
 
 ## Host it for free with GitHub Pages
@@ -22,10 +25,14 @@ A static site — no backend needed, just these three files:
 
 ## To edit later
 
-- Text/content → `index.html`
-- Colors, fonts, spacing, animation timing → `style.css`
-- Scroll-reveal or robot movement behavior → `script.js`
+- Homepage text → `index.html`
+- Bio, timeline, toolset → `about.html`
+- Project entries → `projects.html`
+- Contact details, resume link → `contact.html`
+- Colors, fonts, spacing, animation timing → `style.css` (shared by all pages)
+- Scroll-reveal or robot movement behavior → `script.js` (shared by all pages)
 
-## Known placeholder
+## Known placeholders
 
-- The photo frame in the About section is still empty — add an `<img>` tag inside `.frame` in `index.html` once you have a portrait, and it'll sit inside the corner-bracket frame styling automatically.
+- The photo frame in `index.html` and `about.html` is still empty — add an `<img>` tag inside `.frame` once you have a portrait.
+- The resume download button in `contact.html` points to `#` — upload your CV PDF to the repo and update that `href` to its filename (e.g. `href="Khawja-Kashfee-CV.pdf"`).
